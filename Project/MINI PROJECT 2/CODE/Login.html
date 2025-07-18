@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Foods</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('ai.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+    header {
+      background-color: #28a745;
+      color: white;
+      padding: 15px;
+      text-align:left;
+      font-size: 24px;
+    }
+    footer {
+      background-color: #28a745;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+    }
+    .main-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .login-container {
+      background: #00000081;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 350px; 
+      height : 350px;
+      margin-left: 600px;
+    }
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    input[type="email"], input[type="password"] {
+      width: 94%;
+      padding: 12px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      width: 100%;
+      padding: 15px;
+      background: #28a745;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      
+      
+    }
+    button:hover {
+      background: #218838;
+    }
+    .error {
+      color: red;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: -20px;">
+    <div style="font-size: 24px;"><b>World Foods</b></div>
+    <button onclick="window.location.href='register.html'" style="padding: 8px 10px; background-color: rgb(241, 241, 241); color: #28a745; border-radius: 4px; cursor: pointer; font-weight: bold; width: 90px;">
+      Register
+    </button>
+  </div>
+</header>
+
+
+<div class="main-content">
+  <div class="login-container">
+    <h2 style="color: white;">LOGIN</h2>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required />
+      <div id="emailError" class="error"></div>
+      <input type="password" id="password" placeholder="Password" required />
+      <div id="passwordError" class="error"></div>
+      <button type="submit">Login</button>
+      <h5 style="color: grey; margin-left: 10px;">forgot password?</h5>
+    </form>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Shopping Website. All rights reserved.
+</footer>
+
+<script>
+  const loginForm = document.getElementById('loginForm');
+
+  loginForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const emailError = document.getElementById('emailError');
+    const passwordError = document.getElementById('passwordError');
+
+    emailError.textContent = "";
+    passwordError.textContent = "";
+
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+      emailError.textContent = "Please enter a valid email.";
+      return;
+    }
+
+    if (password.length < 6) {
+      passwordError.textContent = "Password must be at least 6 characters.";
+      return;
+    }
+
+    if (email === "admin@test.com" && password === "admin@123") {
+      window.location.href = "admin.html";
+    } else if (email === "sanjeev@test.com" && password === "user@123") {
+      window.location.href = "customer.html";
+    } else {
+      alert("Invalid credentials.");
+    }
+  });
+</script>
+
+</body>
+</html>
