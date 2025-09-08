@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E25E5C59-F60D-45F8-B758-5C100B76864A}|PaintTest\\Paint.Tests.csproj|c:\\users\\sanjeev.n\\desktop\\phase2\\paint\\painttest\\painterwithmocktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25E5C59-F60D-45F8-B758-5C100B76864A}|PaintTest\\Paint.Tests.csproj|solutionrelative:painttest\\painterwithmocktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25E5C59-F60D-45F8-B758-5C100B76864A}|PaintTest\\Paint.Tests.csproj|c:\\users\\sanjeev.n\\desktop\\phase2\\paint\\painttest\\brushtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25E5C59-F60D-45F8-B758-5C100B76864A}|PaintTest\\Paint.Tests.csproj|solutionrelative:painttest\\brushtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97DE1C75-DE04-4161-BBDE-DB5224E92CBA}|paint\\paint.csproj|c:\\users\\sanjeev.n\\desktop\\phase2\\paint\\paint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97DE1C75-DE04-4161-BBDE-DB5224E92CBA}|paint\\paint.csproj|solutionrelative:paint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97DE1C75-DE04-4161-BBDE-DB5224E92CBA}|paint\\paint.csproj|c:\\users\\sanjeev.n\\desktop\\phase2\\paint\\paint\\brush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97DE1C75-DE04-4161-BBDE-DB5224E92CBA}|paint\\paint.csproj|solutionrelative:paint\\brush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97DE1C75-DE04-4161-BBDE-DB5224E92CBA}|paint\\paint.csproj|c:\\users\\sanjeev.n\\desktop\\phase2\\paint\\paint\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97DE1C75-DE04-4161-BBDE-DB5224E92CBA}|paint\\paint.csproj|solutionrelative:paint\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97DE1C75-DE04-4161-BBDE-DB5224E92CBA}|paint\\paint.csproj|c:\\users\\sanjeev.n\\desktop\\phase2\\paint\\paint\\highvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97DE1C75-DE04-4161-BBDE-DB5224E92CBA}|paint\\paint.csproj|solutionrelative:paint\\highvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97DE1C75-DE04-4161-BBDE-DB5224E92CBA}|paint\\paint.csproj|c:\\users\\sanjeev.n\\desktop\\phase2\\paint\\paint\\ibrush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97DE1C75-DE04-4161-BBDE-DB5224E92CBA}|paint\\paint.csproj|solutionrelative:paint\\ibrush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97DE1C75-DE04-4161-BBDE-DB5224E92CBA}|paint\\paint.csproj|c:\\users\\sanjeev.n\\desktop\\phase2\\paint\\paint\\painter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97DE1C75-DE04-4161-BBDE-DB5224E92CBA}|paint\\paint.csproj|solutionrelative:paint\\painter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PainterWithMockTests.cs",
+              "DocumentMoniker": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\PaintTest\\PainterWithMockTests.cs",
+              "RelativeDocumentMoniker": "PaintTest\\PainterWithMockTests.cs",
+              "ToolTip": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\PaintTest\\PainterWithMockTests.cs",
+              "RelativeToolTip": "PaintTest\\PainterWithMockTests.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAkwCcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T11:38:43.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BrushTests.cs",
+              "DocumentMoniker": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\PaintTest\\BrushTests.cs",
+              "RelativeDocumentMoniker": "PaintTest\\BrushTests.cs",
+              "ToolTip": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\PaintTest\\BrushTests.cs",
+              "RelativeToolTip": "PaintTest\\BrushTests.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T11:35:32.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Company.cs",
+              "DocumentMoniker": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\paint\\Company.cs",
+              "RelativeDocumentMoniker": "paint\\Company.cs",
+              "ToolTip": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\paint\\Company.cs",
+              "RelativeToolTip": "paint\\Company.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T11:20:19.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HighVariant.cs",
+              "DocumentMoniker": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\paint\\HighVariant.cs",
+              "RelativeDocumentMoniker": "paint\\HighVariant.cs",
+              "ToolTip": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\paint\\HighVariant.cs",
+              "RelativeToolTip": "paint\\HighVariant.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA3wBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T11:18:11.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBrush.cs",
+              "DocumentMoniker": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\paint\\IBrush.cs",
+              "RelativeDocumentMoniker": "paint\\IBrush.cs",
+              "ToolTip": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\paint\\IBrush.cs",
+              "RelativeToolTip": "paint\\IBrush.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T11:11:09.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Brush.cs",
+              "DocumentMoniker": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\paint\\Brush.cs",
+              "RelativeDocumentMoniker": "paint\\Brush.cs",
+              "ToolTip": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\paint\\Brush.cs",
+              "RelativeToolTip": "paint\\Brush.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA3wBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T11:08:30.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Painter.cs",
+              "DocumentMoniker": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\paint\\Painter.cs",
+              "RelativeDocumentMoniker": "paint\\Painter.cs",
+              "ToolTip": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\paint\\Painter.cs",
+              "RelativeToolTip": "paint\\Painter.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T11:08:10.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\paint\\Program.cs",
+              "RelativeDocumentMoniker": "paint\\Program.cs",
+              "ToolTip": "C:\\Users\\sanjeev.n\\Desktop\\Phase2\\paint\\paint\\Program.cs",
+              "RelativeToolTip": "paint\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T11:07:06.042Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
