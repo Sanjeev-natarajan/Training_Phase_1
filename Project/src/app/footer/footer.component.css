@@ -1,0 +1,12 @@
+.footer a:hover {
+  text-decoration: underline;
+  color: #ffc107;
+}
+
+.footer i {
+  font-size: 1.2rem;
+}
+
+.footer hr {
+  margin: 1rem 0;
+}

@@ -1,0 +1,35 @@
+<div class="container mt-4">
+  <h2>Super Admin Dashboard</h2>
+
+  <h4 class="mt-3">All Users</h4>
+  <div *ngIf="loadingUsers" class="text-center my-4">
+    <div class="spinner-border text-primary" role="status"></div>
+    <p>Loading users...</p>
+  </div>
+  <table *ngIf="!loadingUsers && users.length > 0" class="table table-bordered table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Active</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of users">
+        <td>{{ u.userId }}</td>
+        <td>{{ u.name }}</td>
+        <td>{{ u.email }}</td>
+        <td>{{ u.roleName }}</td>
+        <td>
+          <span class="badge" [ngClass]="u.isActive ? 'bg-success' : 'bg-danger'">
+            {{ u.isActive ? "Active" : "Inactive" }}
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="!loadingUsers && users.length === 0" class="alert alert-info">No users found.</div>
+
+  

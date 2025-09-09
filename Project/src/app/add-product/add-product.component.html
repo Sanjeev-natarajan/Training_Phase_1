@@ -1,0 +1,38 @@
+<div class="container mt-4">
+  <h2>Add Product</h2>
+
+  <form (ngSubmit)="addProduct()" enctype="multipart/form-data">
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+      <input class="form-control" [(ngModel)]="product.name" name="name" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Brand</label>
+      <input class="form-control" [(ngModel)]="product.brand" name="brand">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Price</label>
+      <input type="number" class="form-control" [(ngModel)]="product.price" name="price" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Category</label>
+      <input class="form-control" [(ngModel)]="product.category" name="category">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Stock</label>
+      <input type="number" class="form-control" [(ngModel)]="product.stock" name="stock">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Image</label>
+      <input type="file" class="form-control" (change)="onFileSelected($event)">
+    </div>
+
+    <button type="submit" style="margin-bottom: 20px;" class="btn btn-success">Add Product</button>
+    <a routerLink="/storekeeper" style="margin-bottom: 20px; "class="btn btn-secondary ms-2">Cancel</a>
+  </form>
+</div>

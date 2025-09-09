@@ -1,0 +1,87 @@
+<div class="container mt-4">
+  <h2>StoreKeeper Dashboard</h2>
+
+  <div class="d-flex justify-content-end mb-3">
+    <a routerLink="/storekeeper/add-product" class="btn btn-primary">
+      + Add Product
+    </a>
+  </div>
+
+  <div class="card mt-3 p-3 mb-3">
+    <h4>My Products</h4>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of products">
+          <td>
+            <img [src]="p.imageUrl" alt="{{ p.name }}" width="60" height="60"
+                 style="object-fit: cover; border-radius: 4px;">
+          </td>
+          <td>{{ p.name }}</td>
+          <td>₹{{ p.price }}</td>
+          <td>{{ p.stock }}</td>
+          <td>
+            <button class="btn btn-sm btn-warning me-2" 
+                    (click)="openEditModal(p)">
+              Edit
+            </button>
+            <button class="btn btn-sm btn-danger" 
+                    (click)="deleteProduct(p.productId)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="modal fade" id="editProductModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" *ngIf="selectedProduct">
+      <div class="modal-header">
+        <h5 class="modal-title">Edit Product</h5>
+        <button type="button" class="btn-close" (click)="cancelEdit()"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" [(ngModel)]="selectedProduct.name" name="name">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Brand</label>
+            <input type="text" class="form-control" [(ngModel)]="selectedProduct.brand" name="brand">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Price</label>
+            <input type="number" class="form-control" [(ngModel)]="selectedProduct.price" name="price">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Category</label>
+            <input type="text" class="form-control" [(ngModel)]="selectedProduct.category" name="category">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Stock</label>
+            <input type="number" class="form-control" [(ngModel)]="selectedProduct.stock" name="stock">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Image</label>
+            <input type="file" class="form-control" (change)="onFileSelected($event)">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="cancelEdit()">Cancel</button>
+        <button class="btn btn-primary" (click)="saveEdit()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>

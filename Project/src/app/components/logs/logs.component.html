@@ -1,0 +1,41 @@
+<div class="container mt-4">
+  <h3>System Audit Logs</h3>
+
+  <div class="mb-3 d-flex align-items-center">
+    <label class="me-2">Filter:</label>
+    <select class="form-select w-auto" [(ngModel)]="selectedFilter" (change)="applyFilter()">
+      <option value="today">Today</option>
+      <option value="week">This Week</option>
+      <option value="month">This Month</option>
+      <option value="all">All</option>
+    </select>
+  </div>
+
+  <div *ngIf="loading" class="text-muted">Loading logs...</div>
+  <div *ngIf="error" class="text-danger">{{ error }}</div>
+
+  <table *ngIf="!loading && logs.length > 0" class="table table-bordered table-striped mt-3">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Action</th>
+        <th>User ID</th>
+        <th>Details</th>
+        <th>Created At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let log of logs">
+        <td>{{ log.id }}</td>
+        <td>{{ log.action }}</td>
+        <td>{{ log.userId }}</td>
+        <td>{{ log.details }}</td>
+        <td>{{ log.createdAt | date:'short' }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="!loading && logs.length === 0" class="text-muted mt-3">
+    No logs available.
+  </div>
+</div>

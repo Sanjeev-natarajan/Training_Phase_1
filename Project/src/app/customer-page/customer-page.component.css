@@ -1,0 +1,38 @@
+.hero-banner {
+  background-color: #155724; 
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+
+.hero-img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.hero-banner h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .hero-banner h2 {
+    font-size: 1.5rem;
+  }
+  .hero-img {
+    max-height: 150px;
+  }
+}
+
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background-color: rgb(218, 218, 218);
+}

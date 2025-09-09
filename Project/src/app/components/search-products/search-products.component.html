@@ -1,0 +1,77 @@
+<div class="container py-4">
+  <h3 class="mb-3">Search Products</h3>
+
+  <div class="row g-3 mb-4">
+    <div class="col-md-4">
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="searchQuery"
+        placeholder="Enter product name"
+      />
+    </div>
+    <div class="col-md-3">
+      <select class="form-select" [(ngModel)]="category">
+        <option value="">All Categories</option>
+        <option>Vegetables</option>
+        <option>Snacks</option>
+        <option>Dairy</option>
+        <option>Groceries</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <input
+        type="number"
+        class="form-control"
+        [(ngModel)]="priceMin"
+        placeholder="Min Price"
+      />
+    </div>
+    <div class="col-md-2">
+      <input
+        type="number"
+        class="form-control"
+        [(ngModel)]="priceMax"
+        placeholder="Max Price"
+      />
+    </div>
+    <div class="col-md-1">
+      <button class="btn btn-success w-100" (click)="onSearch()">Go</button>
+    </div>
+  </div>
+
+  <div *ngIf="loading" class="text-center">
+    <div class="spinner-border text-success"></div>
+  </div>
+
+  <div class="row">
+    <div
+      *ngFor="let product of products"
+      class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"
+    >
+      <div class="card h-100 shadow-sm border-0">
+        <img
+          [src]="product.imageUrl"
+          class="card-img-top"
+          alt="{{ product.name }}"
+          style="height: 180px; object-fit: contain"
+        />
+        <div class="card-body">
+          <h6 class="card-title">{{ product.name }}</h6>
+          <p class="mb-1 fw-bold text-success">₹{{ product.price }}</p>
+          <small class="text-muted"
+            >{{ product.category }} | Stock: {{ product.stock }}</small
+          >
+        </div>
+        <div class="card-footer bg-white border-0 text-end">
+          <button
+            class="btn btn-sm btn-outline-success"
+            (click)="addToCart(product.productId)"
+          >
+            <i class="bi bi-plus"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

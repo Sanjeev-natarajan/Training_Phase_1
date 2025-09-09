@@ -1,0 +1,57 @@
+<div class="container mt-4">
+  <h2>My Assigned Orders</h2>
+
+  <div class="card p-3">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Order Date</th>
+          <th>Status</th>
+          <th>Total Amount</th>
+          <th>Items</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let o of orders">
+          <td>{{ o.orderId }}</td>
+          <td>{{ o.orderDate | date:'short' }}</td>
+          <td>{{ o.status }}</td>
+          <td>₹{{ o.totalAmount }}</td>
+          <td>
+            <ul class="mb-0">
+              <li *ngFor="let item of o.items">
+                {{ item.productName }} ({{ item.quantity }}) - ₹{{ item.price }}
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ng-container *ngIf="o.status !== 'Delivered'">
+              <button class="btn btn-primary btn-sm me-1"
+                      (click)="updateStatus(o.orderId, 'OutForDelivery')"
+                      [disabled]="o.status === 'OutForDelivery'">
+                Out For Delivery
+              </button>
+
+              <button class="btn btn-success btn-sm me-1"
+                      (click)="updateStatus(o.orderId, 'Delivered')">
+                Delivered
+              </button>
+
+              <button class="btn btn-warning btn-sm"
+                      (click)="updateStatus(o.orderId, 'CustomerUnavailable')"
+                      [disabled]="o.status === 'CustomerUnavailable'">
+                Customer Unavailable
+              </button>
+            </ng-container>
+
+            <span *ngIf="o.status === 'Delivered'" class="text-success fw-bold">
+              Delivered
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

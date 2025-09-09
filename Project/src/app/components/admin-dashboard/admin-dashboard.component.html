@@ -1,0 +1,46 @@
+<div class="container mt-4">
+  <h2>Admin Dashboard - All Users</h2>
+
+  <div *ngIf="loading" class="text-center my-4">
+    <div class="spinner-border text-primary" role="status"></div>
+    <p>Loading users...</p>
+  </div>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <div *ngIf="!loading && users.length > 0">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th>User ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Active</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let u of users">
+          <td>{{ u.userId }}</td>
+          <td>{{ u.name }}</td>
+          <td>{{ u.email }}</td>
+          <td>{{ u.roleName }}</td>
+          <td>
+            <span
+              class="badge"
+              [ngClass]="u.isActive ? 'bg-success' : 'bg-danger'"
+            >
+              {{ u.isActive ? "Active" : "Inactive" }}
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="!loading && users.length === 0" class="alert alert-info">
+    No users found.
+  </div>
+</div>

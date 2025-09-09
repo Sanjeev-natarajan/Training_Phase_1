@@ -1,0 +1,11 @@
+<ng-container *ngIf="!isLoggedIn">
+  <app-navbar></app-navbar>
+</ng-container>
+
+<ng-container *ngIf="isLoggedIn">
+  <app-role-navbar [role]="userRole"></app-role-navbar>
+</ng-container>
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

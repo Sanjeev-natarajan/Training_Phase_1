@@ -1,0 +1,40 @@
+<div class="container mt-4">
+  <h2>Assign Orders</h2>
+
+
+  <div class="mb-3">
+    <label>Status:</label>
+    <select class="form-select w-auto d-inline-block ms-2" [(ngModel)]="filterStatus" (change)="setFilter(filterStatus)">
+      <option value="pending">Pending</option>
+      <option value="completed">Completed</option>
+      <option value="Paid">Paid</option>
+      <option value="rejected">Rejected</option>
+      <option value="delivered">Delivered</option>
+    </select>
+  </div>
+
+  <div class="card p-3">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Customer</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let o of orders">
+          <td>{{ o.orderId }}</td>
+          <td>{{ o.customerName }}</td>
+          <td>{{ o.status }}</td>
+          <td>
+            <button class="btn btn-sm btn-primary" (click)="assignOrder(o.orderId)" >
+              Assign to Delivery
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
